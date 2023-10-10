@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hierarchical node</title>
+        <style>
+          body {
+          background-color: rgb(22, 22, 78);
+          min-height: 0vh;
+          flex-direction: column;
+          align-items: left;
+          justify-content: left;
+          font-size: calc(10px + 2vmin);
+          color:aliceblue
+          }
+            .button {
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            
+            .button2 {background-color: #008CBA;} 
+            </style>
+    </head>
+
+    <body>
+        <div id="container">
+         <h1 style="text-align:center">Digiplus IT Technical Assessment</h1><br>
+         <h2 style="text-align:center">Hierarchical Nodes</h2><br>
+        </div> <br>
+        <div id="controls" style="text-align:center">
+            <label for="node">NODE TYPE</label>
+            <select id="node" name="node">
+              <option value="single node">Single Node</option>
+              <option value="parent node">Parent Node</option>
+              <option value="child node">Child Node</option>
+            </select><br><br>
+
+            <label for="lname">NODE VALUE</label><br>
+            <input type="text" id="nodevalue" name="value" placeholder="write node value here "><br><br>
+
+            <label for="lname">Select node</label><br>
+            <input type="text" id="selectnode" name="selectnode" placeholder="Node Name"><br><br>
+
+            
+            <button class="add-node">ADD NODE</button>
+            <button class="add-child">UPDATE NODE</button>    
+            <button class="add-parent">DELETE NODE</button>
+
+                
+        </div>
